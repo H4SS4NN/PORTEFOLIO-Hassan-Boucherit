@@ -87,20 +87,3 @@ nav {
   transform: scale(0.95);
   display: none;
 }
-
-.project-item {
-  transition: opacity 0.5s, transform 0.5s;
-  display: none; /* Initiallement caché */
-}
-
-.project-item.show {
-  opacity: 1;
-  transform: scale(1);
-  display: block;
-}
-
-.project-item.hide {
-  opacity: 0;
-  transform: scale(0.95);
-  display: none;
-}

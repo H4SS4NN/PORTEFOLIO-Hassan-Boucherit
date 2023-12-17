@@ -1,136 +1,179 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../template/Projet.css">
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../template/Projet.css" />
     <title>Projets - Hassan Boucherit</title>
     <style>
-        .project-item {
-            transition: opacity 0.5s, transform 0.5s;
-            opacity: 0;
-            transform: scale(0.95);
-            display: none;
-        }
+      .project-item {
+        transition: opacity 0.5s, transform 0.5s;
+        opacity: 0;
+        transform: scale(0.95);
+        display: none;
+      }
 
-        .project-item.show {
-            opacity: 1;
-            transform: scale(1);
-            display: block;
-        }
+      .project-item.show {
+        opacity: 1;
+        transform: scale(1);
+        display: block;
+      }
 
-        .project-item.hide {
-            opacity: 0;
-            transform: scale(0.95);
-            display: none;
-        }
+      .project-item.hide {
+        opacity: 0;
+        transform: scale(0.95);
+        display: none;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <nav>
-        <div class="sousnav">
-            <div class="partiegauche">
-                <img src="../asset/portrait_progedoc-4.jpg" alt=" " />
-                <a href="">Hassan Boucherit</a>
-            </div>
-            <div>
-                <ul class="header__links">
-                    <li class="header__link-wrapper">
-                        <a href="./" class="header__link"> Accueil </a>
-                    </li>
-                    <li class="header__link-wrapper">
-                        <a href="./#about" class="header__link">BTS SIO</a>
-                    </li>
-                    <li class="header__link-wrapper">
-                        <a href="./#ecole" class="header__link">Ecole</a>
-                    </li>
-                    <li class="header__link-wrapper">
-                        <a href="./#projects" class="header__link">Entreprise </a>
-                    </li>
-                    <li>
-                        <a href="./#creationperso" class="header__link">Projet </a>
-                    </li>
-                </ul>
-            </div>
+      <div class="sousnav">
+        <div class="partiegauche">
+          <img src="../asset/portrait_progedoc-4.jpg" alt=" " />
+          <a href="">Hassan Boucherit</a>
         </div>
+        <div>
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Accueil </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./BTS-SIO.html" class="header__link">BTS SIO</a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./Documentation.html" class="header__link"
+                >Documentation</a
+              >
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./Entreprise.html" class="header__link">Entreprise </a>
+            </li>
+            <li>
+              <a href="./Projet.html" class="header__link">Ecole </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <div style="height: 100px;"> </div>
+    <div style="height: 100px"></div>
 
     <!-- Section Projets -->
     <div class="container my-5">
-        <h1 class="text-center mb-4">Mes Projets</h1>
+      <h1 class="text-center mb-4">Mes Projets</h1>
 
-        <!-- Boutons de Filtrage -->
-        <div class="text-center mb-4">
-            <button class="btn btn-outline-primary m-2 btn-filter" data-filter="*">Tous</button>
-            <button class="btn btn-outline-secondary m-2 btn-filter" data-filter="scolaire">Projets
-                Scolaires</button>
-            <button class="btn btn-outline-secondary m-2 btn-filter" data-filter="professionnel">Projets
-                Professionnels</button>
-        </div>
+      <!-- Boutons de Filtrage -->
+      <div class="text-center mb-4">
+        <button class="btn btn-outline-primary m-2 btn-filter" data-filter="*">
+          Tous
+        </button>
+        <button
+          class="btn btn-outline-secondary m-2 btn-filter"
+          data-filter="scolaire"
+        >
+          Projets Scolaires
+        </button>
+        <button
+          class="btn btn-outline-secondary m-2 btn-filter"
+          data-filter="professionnel"
+        >
+          Projets Professionnels
+        </button>
+      </div>
 
-        <!-- Liste des Projets -->
-        <div class="row" id="projects-list">
-            <!-- Exemple de projet scolaire -->
-            <div class="col-md-4 project-item" data-category="scolaire">
-                <div class="card">
-                    <img class="card-img-top" src="chemin_vers_image_projet_scolaire.jpg"
-                        alt="Image du projet scolaire">
-                    <div class="card-body">
-                        <h5 class="card-title">Projet Scolaire 1</h5>
-                        <p class="card-text">Description du projet scolaire 1. Quelques détails sur le projet...</p>
-                        <a href="lien_vers_projet_scolaire" class="btn btn-primary">Voir le projet</a>
-                    </div>
-                </div>
+      <!-- Liste des Projets -->
+      <div class="row" id="projects-list">
+        <!-- Exemple de projet scolaire -->
+        <div class="col-md-4 project-item" data-category="scolaire">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="chemin_vers_image_projet_scolaire.jpg"
+              alt="Image du projet scolaire"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Projet Scolaire 1</h5>
+              <p class="card-text">
+                Description du projet scolaire 1. Quelques détails sur le
+                projet...
+              </p>
+              <a href="lien_vers_projet_scolaire" class="btn btn-primary"
+                >Voir le projet</a
+              >
             </div>
-            <!-- Exemple de projet professionnel -->
-            <div class="col-md-4 project-item" data-category="professionnel">
-                <div class="card">
-                    <img class="card-img-top" src="chemin_vers_image_projet_professionnel.jpg"
-                        alt="Image du projet professionnel">
-                    <div class="card-body">
-                        <h5 class="card-title">Projet Professionnel 1</h5>
-                        <p class="card-text">Description du projet professionnel 1. Informations sur le projet...</p>
-                        <a href="lien_vers_projet_professionnel" class="btn btn-primary">Voir le projet</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Ajouter d'autres projets ici -->
+          </div>
         </div>
+        <!-- Exemple de projet professionnel -->
+        <div class="col-md-4 project-item" data-category="professionnel">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="chemin_vers_image_projet_professionnel.jpg"
+              alt="Image du projet professionnel"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Projet Professionnel 1</h5>
+              <p class="card-text">
+                Description du projet professionnel 1. Informations sur le
+                projet...
+              </p>
+              <a href="lien_vers_projet_professionnel" class="btn btn-primary"
+                >Voir le projet</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Ajouter d'autres projets ici -->
+      </div>
+    </div>
 
-        <!-- JavaScript pour filtrer et animer les projets -->
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const projects = document.querySelectorAll('.project-item');
-                const buttons = document.querySelectorAll('.btn-filter');
+    <svg
+      style="position: absolute; bottom: 0px"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+    >
+      <path
+        fill="#E7E7E7"
+        fill-opacity="1"
+        d="M0,288L48,272C96,256,192,224,288,176C384,128,480,64,576,64C672,64,768,128,864,160C960,192,1056,192,1152,176C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
 
-                function filterProjects(category) {
-                    projects.forEach(project => {
-                        if (category === '*' || project.getAttribute('data-category') === category) {
-                            project.classList.remove('hide');
-                            project.classList.add('show');
-                        } else {
-                            project.classList.remove('show');
-                            project.classList.add('hide');
-                        }
-                    });
-                }
+    <!-- JavaScript pour filtrer et animer les projets -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const projects = document.querySelectorAll(".project-item");
+        const buttons = document.querySelectorAll(".btn-filter");
 
-                // Afficher tous les projets au chargement initial de la page
-                filterProjects('*');
+        function filterProjects(category) {
+          projects.forEach((project) => {
+            if (
+              category === "*" ||
+              project.getAttribute("data-category") === category
+            ) {
+              project.classList.remove("hide");
+              project.classList.add("show");
+            } else {
+              project.classList.remove("show");
+              project.classList.add("hide");
+            }
+          });
+        }
 
-                buttons.forEach(button => {
-                    button.addEventListener('click', function () {
-                        const category = this.getAttribute('data-filter');
-                        filterProjects(category === '*' ? '*' : category);
-                    });
-                });
-            });
-        </script>
-    
-</body>
+        // Afficher tous les projets au chargement initial de la page
+        filterProjects("*");
 
+        buttons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const category = this.getAttribute("data-filter");
+            filterProjects(category === "*" ? "*" : category);
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
