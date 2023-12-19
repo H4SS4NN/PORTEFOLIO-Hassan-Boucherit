@@ -1,270 +1,430 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProgeDoc - Solutions de Gestion Documentaire</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../template/doc.css" />
+    <script
+      src="https://kit.fontawesome.com/yourkitcode.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .navbar {
+        background: #fff;
+        box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ProgeDoc - Solutions de Gestion Documentaire</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../template/doc.css" />
-  <script src="https://kit.fontawesome.com/yourkitcode.js" crossorigin="anonymous"></script>
-  <style>
-    .navbar {
-      background: #fff;
-      box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
-    }
+      .navbar-brand {
+        display: flex;
+        align-items: center;
+      }
 
-    .navbar-brand {
-      display: flex;
-      align-items: center;
-    }
+      .navbar-brand img {
+        border-radius: 50%;
+        margin-right: 2rem;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+      }
 
-    .navbar-brand img {
-      border-radius: 50%;
-      margin-right: 2rem;
-      width: 50px;
-      height: 50px;
-      object-fit: cover;
-    }
+      .navbar-brand,
+      .nav-link {
+        color: black;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-decoration: none;
+      }
 
-    .navbar-brand,
-    .nav-link {
-      color: black;
-      font-size: 1rem;
-      text-transform: uppercase;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-decoration: none;
-    }
+      .nav-link {
+        padding: 2rem 1rem;
+        transition: color 0.3s;
+      }
 
-    .nav-link {
-      padding: 2rem 1rem;
-      transition: color 0.3s;
-    }
+      .nav-link:hover {
+        color: #999597;
+      }
 
-    .nav-link:hover {
-      color: #999597;
-    }
+      .specialty-title {
+        color: #004080;
+        /* Couleur des titres des sections */
+      }
 
-    .specialty-title {
-      color: #004080;
-      /* Couleur des titres des sections */
-    }
+      .container img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
 
-    .container img {
-      max-width: 100%;
-      height: auto;
-    }
-  </style>
-</head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../asset/portrait_progedoc-4.jpg" alt="Hassan Boucherit" />
+          Hassan Boucherit
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a
+              class="nav-link active header__link"
+              aria-current="page"
+              href="./index.html"
+              >Accueil</a
+            >
+            <a class="nav-link header__link" href="./BTS-SIO.html">BTS SIO</a>
+            <a class="nav-link header__link" href="./Documentation.html"
+              >Documentation</a
+            >
+            <a class="nav-link header__link" href="./Entreprise.html"
+              >Entreprise</a
+            >
+            <a class="nav-link header__link" href="./Projet.html">Ecole</a>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="../asset/portrait_progedoc-4.jpg" alt="Hassan Boucherit">
-        Hassan Boucherit
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link active header__link" aria-current="page" href="./index.html">Accueil</a>
-          <a class="nav-link header__link" href="./BTS-SIO.html">BTS SIO</a>
-          <a class="nav-link header__link" href="./Documentation.html">Documentation</a>
-          <a class="nav-link header__link" href="./Entreprise.html">Entreprise</a>
-          <a class="nav-link header__link" href="./Projet.html">Ecole</a>
+    <div style="height: 100px"></div>
+    <!-- Introduction à ProgeDoc -->
+    <div class="container my-5">
+      <h1 class="text-center mb-4">Répertoire de Documentation</h1>
+
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="../asset/cuteshoot.png" alt="" />
+              <h5 class="card-title">CUTESHOOT</h5>
+              <p class="card-text">
+                Un système de connexion sécurisé donnant accès à une boîte à
+                idées.
+              </p>
+              <button
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#modalCat1"
+              >
+                Voir Plus
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="modalCat1"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="modalLabelCat1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLabelCat1">Cuteshoot</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <embed
+                  src="../asset/Cuteshoot.pdf"
+                  type="application/pdf"
+                  width="100%"
+                  height="600px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="../asset/clip_image002.png" alt="" />
+              <h5 class="card-title">AP 2</h5>
+              <p class="card-text">M2L- Association sportive</p>
+              <button
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#modalCat2"
+              >
+                Voir Plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="modalCat2"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="modalLabelCat1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLabelCat1">AP -2</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <embed
+                  src="../asset/AP2.pdf"
+                  type="application/pdf"
+                  width="100%"
+                  height="600px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <img
+                src="../asset/1uFdteRegDyPN-ohQ3SSs0Pg5rFluSHlmFE0nUhDP44A.png"
+                alt=""
+              />
+              <h5 class="card-title">AP-1</h5>
+              <p class="card-text">Oblivion a la pointe de la securite .</p>
+              <button
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#modalCat3"
+              >
+                Voir Plus
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="modalCat3"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="modalLabelCat1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLabelCat1">AP - 1</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <embed
+                  src="../asset/Cyber_Security_Business_Plan_by_Slidesgo (1).pptx.pdf"
+                  type="application/pdf"
+                  width="100%"
+                  height="600px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="../asset/Feedly-logo.png" alt="" />
+              <h5 class="card-title">Feedly</h5>
+              <p class="card-text">Documentation Feedly</p>
+              <button
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#modalCat4"
+              >
+                Voir Plus
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="modalCat4"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="modalLabelCat1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLabelCat1">Feedly</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <embed
+                  src="../asset/Feedly.pdf"
+                  type="application/pdf"
+                  width="100%"
+                  height="600px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <img src="../asset/logo-glpi.png" alt="" />
+              <h5 class="card-title">GLPI</h5>
+              <p class="card-text">Application pour tickets.</p>
+              <button
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#modalCat5"
+              >
+                Voir Plus
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="modalCat5"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="modalLabelCat1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLabelCat1">GLPI</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <embed
+                  src="../asset/GLPI_VM.pdf"
+                  type="application/pdf"
+                  width="100%"
+                  height="600px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Tableau de synthese</h5>
+              <p class="card-text">tableau de synthese</p>
+              <button
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#modalCat6"
+              >
+                Voir Plus
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </nav>
 
-  <div style="height: 100px"></div>
-  <!-- Introduction à ProgeDoc -->
-  <div class="container my-5">
-    <h1 class="text-center mb-4">Répertoire de Documentation</h1>
-
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <img src="../asset/cuteshoot.png" alt="">
-            <h5 class="card-title">CUTESHOOT</h5>
-            <p class="card-text">
-              Un système de connexion sécurisé
-              donnant accès à une boîte à idées.
-            </p>
-            <button class="btn btn-primary" data-toggle="modal" data-target="#modalCat1">Voir Plus</button>
+    <div
+      class="modal fade"
+      id="modalCat6"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalLabelCat1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabelCat1">GLPI</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-        </div>
-      </div>
-
-      <div class="modal fade" id="modalCat1" tabindex="-1" role="dialog" aria-labelledby="modalLabelCat1"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalLabelCat1">Cuteshoot</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <embed src="../asset/Cuteshoot.pdf" type="application/pdf" width="100%" height="600px" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <img src="../asset/clip_image002.png" alt="">
-            <h5 class="card-title">AP 2</h5>
-            <p class="card-text">M2L- Association sportive</p>
-            <button class="btn btn-primary" data-toggle="modal" data-target="#modalCat2">Voir Plus</button>
-          </div>
-        </div>
-      </div>
-      <div class="modal fade" id="modalCat2" tabindex="-1" role="dialog" aria-labelledby="modalLabelCat1"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalLabelCat1">AP -2</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <embed src="../asset/AP2.pdf" type="application/pdf" width="100%" height="600px" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <img src="../asset/1uFdteRegDyPN-ohQ3SSs0Pg5rFluSHlmFE0nUhDP44A.png" alt="">
-            <h5 class="card-title">AP-1</h5>
-            <p class="card-text">Oblivion a la pointe de la securite .</p>
-            <button class="btn btn-primary" data-toggle="modal" data-target="#modalCat3">Voir Plus</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade" id="modalCat3" tabindex="-1" role="dialog" aria-labelledby="modalLabelCat1"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalLabelCat1">AP - 1</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <embed src="../asset/Cyber_Security_Business_Plan_by_Slidesgo (1).pptx.pdf" type="application/pdf"
-                width="100%" height="600px" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <img src="../asset/Feedly-logo.png" alt="">
-            <h5 class="card-title">Feedly</h5>
-            <p class="card-text">Documentation Feedly</p>
-            <button class="btn btn-primary" data-toggle="modal" data-target="#modalCat4">Voir Plus</button>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-      <div class="modal fade" id="modalCat4" tabindex="-1" role="dialog" aria-labelledby="modalLabelCat1"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalLabelCat1">Feedly</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <embed src="../asset/Feedly.pdf" type="application/pdf" width="100%" height="600px" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-      <div class="col-md-4 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <img src="../asset/téléchargement.png" alt="">
-            <h5 class="card-title">GLPI</h5>
-            <p class="card-text">Application pour tickets.</p>
-            <button class="btn btn-primary" data-toggle="modal" data-target="#modalCat5">Voir Plus</button>
-
-
-          </div>
-        </div>
-      </div>
-
-      <div class="modal fade" id="modalCat5" tabindex="-1" role="dialog" aria-labelledby="modalLabelCat1"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="modalLabelCat1">GLPI</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <embed src="../asset/GLPI_VM.pdf" type="application/pdf" width="100%" height="600px" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="col-md-4 mb-3">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Catégorie 3</h5>
-            <p class="card-text">Description ou liste de documents pour la Catégorie 3.</p>
-            <a href="#" class="btn btn-primary">Voir Plus</a>
+          <div class="modal-body">
+            <embed
+              src="../asset/6- Annexe 6-1 - Tableau de synthèse - Epreuve E4 - BTS SIO 2023.pdf"
+              type="application/pdf"
+              width="100%"
+              height="600px"
+            />
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
 </html>
