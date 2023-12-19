@@ -1,236 +1,126 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+/* Existing CSS Styles */
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
-body {
-  font-family: "Montserrat", sans-serif;
-}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .firstcontainer h1 {
+    font-size: 2rem;
+  }
+  
+  .header__link {
+    padding: 1rem 0.5rem;
+  }
 
-nav {
-  position: fixed;
+  .buttontype {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .buttontype button {
+    margin-bottom: 10px;
+  }
+
+  .reseaux {
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    top: unset;
+    bottom: 10px;
+  }
+}
+/* Existing CSS Styles */
+
+/* Overlay Text Styles */
+.firstcontainer {
+  position: relative;
+  margin: 0px !important;
+  padding: 0px  !important; 
   width: 100%;
-  z-index: 1000;
-  background: #000;
-  background: #fff;
-  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
 }
-.partiegauche {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.partiegauche img {
-  border-radius: 50%;
-  margin-right: 2rem;
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-}
-.partiegauche a {
-  color: black;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-decoration: none;
-}
-.header__links {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.sousnav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0rem 4rem;
-}
-.sousnav li {
-  list-style: none;
-}
-.header__link {
-  padding: 2rem 1rem;
-  display: inline-block;
 
-  color: #333;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  transition: color 0.3s;
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Adjust the text color as needed */
 }
-.header__link:hover {
-  color: #999597;
-}
-.sousnav a {
-  text-decoration: none;
-}
-.sousnav ul {
-  margin-bottom: 0px;
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .firstcontainer{
+    margin: 0px;
+    padding: 0px ;
+    margin-top: 98px;
+  }
+  .firstcontainer h1 {
+    font-size: 1rem;
+  }
+  
+  .header__link {
+    padding: 1rem 0.5rem;
+  }
+
+  .buttontype {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .buttontype button {
+    margin-bottom: 10px;
+  }
+
+  .reseaux {
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    top: unset;
+    bottom: 10px;
+  }
 }
 .firstcontainer {
   position: relative;
-  margin-bottom: 10%;
-  display: flex;
-
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-  color: black;
 }
-.firstcontainer img {
-  margin-top: 50px;
+
+.overlay-text {
   position: absolute;
-  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Adjust the text color as needed */
+}
 
-  width: 100%;
-  height: 100%;
-}
-.firstcontainer h1 {
-  padding-top: 27vh;
-  font-size: 4rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-align: center;
-  color: #111;
-  font-weight: 800;
-}
-.firstcontainer h2 {
-  margin-bottom: 3rem;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .overlay-text h1 {
+    font-size: 2rem; /* Smaller font size for the title */
+  }
 
-  width: 50%;
-  text-align: center;
+  .overlay-text h2 {
+    font-size: 1.5rem; /* Smaller font size for the subtitle */
+  }
+
+  .buttontype button {
+    font-size: 0.8rem; /* Smaller font size for buttons */
+    padding: 10px 15px; /* Smaller padding for buttons */
+  }
+
+  .reseaux i {
+    font-size: 30px; /* Smaller size for icons */
+  }
 }
-.firstcontainer button {
-  background-color: #999597;
-  border: none;
-  opacity: 0.7;
-}
-.firstcontainer button:hover {
-  opacity: 1;
-}
+
 .buttontype {
   display: flex;
-  width: 750px;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 10px; /* Adjust the gap between buttons */
 }
+
+.buttontype button {
+  margin-bottom: 10px;
+}
+
 .reseaux {
-  background-color: white;
-
   display: flex;
-  flex-direction: column;
-
-  position: absolute;
-  left: 0px;
-  top: 40%;
-}
-.reseaux i {
-  cursor: pointer;
-  padding: 10px;
-  margin: 10px;
-  border-radius: px;
-}
-.reseaux i:hover {
-  transition: 1s;
-  background-color: #999597;
-}
-
-/* tree */
-.img-fluid {
-  max-height: 100px; /* Adjust this value as needed */
-}
-.container {
-  text-align: center;
-  padding: 2rem 0rem;
-}
-.container h1{
-  width: 100%;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-}
-.container h2{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-}
-
-.tree {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  transform-style: preserve-3d;
-  transform: rotateX(-20deg) rotateY(30deg);
-  animation: treeAnimate 5s linear infinite;
-}
-
-@keyframes treeAnimate {
-  0% {
-    transform: rotateX(-20deg) rotateY(360deg);
-  }
-
-  100% {
-    transform: rotateX(-20deg) rotateY(0deg);
-  }
-}
-
-.tree div {
-  position: absolute;
-  top: -50px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-  transform: translateY(calc(25px * var(--x))) translateZ(0px);
-}
-
-.tree div.branch span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, #69c069, #77dd77);
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  border-bottom: 5px solid #00000019;
-  transform-origin: bottom;
-  transform: rotateY(calc(90deg * var(--i))) rotateX(30deg) translateZ(28.5px);
-}
-
-.tree div.stem span {
-  position: absolute;
-  top: 110px;
- /* updated top value */
-  left: calc(50% - 7.5px);
-  width: 15px;
-  height: 50%;
-  background: linear-gradient(90deg, #bb4622, #df7214);
-  border-bottom: 5px solid #00000019;
-  transform-origin: bottom;
-  transform: rotateY(calc(90deg * var(--i))) translateZ(7.5px);
-}
-
-.shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  filter: blur(20px);
-  transform-style: preserve-3d;
-  transform: rotateX(90deg) translateZ(-65px);
-}
-
-
-@media (max-width: 768px) {
-  .firstcontainer h1 {
-    font-size: 2rem; /* Taille de police plus petite pour les petits écrans */
-  }
-
-  .header__link {
-    padding: 1rem 0.5rem; /* Espacement réduit pour les liens de la navbar */
-  }
-
-  /* Autres ajustements spécifiques pour les petits écrans */
+  justify-content: center;
+  gap: 10px; /* Adjust the gap between icons */
 }

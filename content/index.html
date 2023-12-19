@@ -1,156 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="../template/index.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../template/index.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hassan Boucherit - Développeur Fullstack</title>
+</head>
+<style>
+  .navbar {
+    background: #fff;
+    box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+  }
 
-  <body>
-    <nav>
-      <div class="sousnav">
-        <div class="partiegauche">
-          <img src="../asset/portrait_progedoc-4.jpg" alt=" " />
-          <a href="">Hassan Boucherit</a>
-        </div>
-        <div>
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Accueil </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./BTS-SIO.html" class="header__link">BTS SIO</a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./Documentation.html" class="header__link"
-                >Documentation</a
-              >
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./Entreprise.html" class="header__link">Entreprise </a>
-            </li>
-            <li>
-              <a href="./Projet.html" class="header__link">Ecole </a>
-            </li>
-          </ul>
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-brand img {
+    border-radius: 50%;
+    margin-right: 2rem;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+
+  .navbar-brand,
+  .nav-link {
+    color: black;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+
+  .nav-link {
+    padding: 2rem 1rem;
+    transition: color 0.3s;
+  }
+
+  .nav-link:hover {
+    color: #999597;
+  }
+
+  .specialty-title {
+    color: #004080;
+    /* Couleur des titres des sections */
+  }
+
+  .container img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../asset/portrait_progedoc-4.jpg" alt="Hassan Boucherit">
+        Hassan Boucherit
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active header__link" aria-current="page" href="./index.html">Accueil</a>
+          <a class="nav-link header__link" href="./BTS-SIO.html">BTS SIO</a>
+          <a class="nav-link header__link" href="./Documentation.html">Documentation</a>
+          <a class="nav-link header__link" href="./Entreprise.html">Entreprise</a>
+          <a class="nav-link header__link" href="./Projet.html">Ecole</a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <div class="firstcontainer">
+
+  <!-- First Container -->
+  <div class="container-fluid firstcontainer text-center">
+    <img width="100%" src="../asset/fondecra.png" alt="" class="img-fluid" />
+    <div class="overlay-text">
       <h1>HEY, JE SUIS HASSAN</h1>
-      <img src="../asset/fondecra.png" alt="" />
-      <h2>Developer fullstack</h2>
-      <div class="buttontype">
+      <h2>Developer Fullstack</h2>
+      <div class="btn-group buttontype" role="group">
         <button type="button" class="btn btn-primary btn-lg">MON CV</button>
-        <a href="hassan.boucherit@gmail.com"
-          ><button type="button" class="btn btn-primary btn-lg">
-            ME CONTACTER
-          </button></a
-        >
+        <a href="mailto:hassan.boucherit@gmail.com">
+          <button type="button" class="btn btn-primary btn-lg">ME CONTACTER</button>
+        </a>
       </div>
       <div class="reseaux">
         <i class="bi bi-github" style="font-size: 40px; color: black"></i>
         <i class="bi bi-linkedin" style="font-size: 40px; color: black"></i>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <h1>ABOUT ME</h1>
-        <div class="petittrait"></div>
-
-        <div class="d-flex flex-column justify-content-center">
-          <p>
-            Vous trouverez ici plus d’informations sur moi, ce que je fais et
-            mes compétences actuelles principalement en termes de programmation
-            et de technologie
-          </p>
-        </div>
-
-        <!-- Première Div : Titre et Paragraphe -->
-        <div class="col d-flex flex-column justify-content-center">
-          <h2>Apprend a me connaitre</h2>
-          <p>
-            Je m'appelle Hassan BOUCHERIT, j'ai 20 ans. Je suis actuellement
-            etudiant a l'ipssi, dans la spécialité de Solutions Logicielles et
-            Applications Métier (SLAM). Mon entreprise d'alternance est
-            Progedoc. Dès mon plus jeune âge, j'ai commencé à me passionner pour
-            l'informatique. J'ai obtenu mon diplôme du baccalauréat en Sciences
-            de l'Ingénieur (Bac SI) au Lycée Branly à Dreux. Au cours de ces
-            années de lycée, je me suis passionné pour l'informatique, mais plus
-            particulièrement pour le développement, ce qui explique mon choix
-            pour l'option ISN (Informatique et Sciences du Numérique) au lycée.
-          </p>
-        </div>
-        <!-- Deuxième Div : Titre et Images avec Grid -->
-        <div class="col text-center">
-          <h2>Skills</h2>
-          <div class="d-flex text-center flex-wrap">
-            <!-- Images arrangées dans un grid -->
-
-            <div class="col-3 p-2">
-              <img
-                src="../asset/HTML5_logo_and_wordmark.svg.png"
-                class="img-fluid"
-              />
-            </div>
-            <div class="col-3 p-2">
-              <img
-                src="../asset/CSS3_logo_and_wordmark.svg.png"
-                class="img-fluid"
-              />
-            </div>
-            <div class="col-3 p-2">
-              <img src="../asset/téléchargement.png" class="img-fluid" />
-            </div>
-            <div class="col-3 p-2">
-              <img src="../asset/PHP-logo.svg.png" class="img-fluid" />
-            </div>
-            <div class="col-3 p-2">
-              <img
-                src="../asset/Angular_full_color_logo.svg.png"
-                class="img-fluid"
-              />
-            </div>
-            <div class="col-3 p-2">
-              <img
-                src="../asset/2560px-Node.js_logo.svg.png"
-                class="img-fluid"
-              />
-            </div>
-            <div class="col-3 p-2">
-              <img src="../asset/1200px-MySQL.svg.png" class="img-fluid" />
-            </div>
-
-            <div class="col-3 p-2">
-              <img src="../asset/React-icon.svg.png" class="img-fluid" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <h1>Mon avenir</h1>
-        <div class="petittrait"></div>
+  </div>
+  <!-- About Me Section -->
+  <div class="container text-center my-5">
+    <h1>ABOUT ME</h1>
+    <div class="petittrait"></div>
+    <div class="row">
+      <div class="col-md-12 d-flex flex-column justify-content-center">
+        <h2>Apprend a me connaitre</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero porro
-          tenetur, numquam in voluptas mollitia fugiat eum assumenda delectus
-          quibusdam laborum, placeat voluptatibus sit eligendi at ex, modi aut
-          autem.
+          Je m'appelle Hassan BOUCHERIT, j'ai 20 ans. Je suis actuellement etudiant a l'ipssi, dans la spécialité de
+          Solutions Logicielles et Applications Métier (SLAM). Mon entreprise d'alternance est Progedoc. Dès mon plus
+          jeune âge, j'ai commencé à me passionner pour l'informatique. J'ai obtenu mon diplôme du baccalauréat en
+          Sciences de l'Ingénieur (Bac SI) au Lycée Branly à Dreux. Au cours de ces années de lycée, je me suis
+          passionné pour l'informatique, mais plus particulièrement pour le développement, ce qui explique mon choix
+          pour l'option ISN (Informatique et Sciences du Numérique) au lycée.
         </p>
       </div>
     </div>
-  </body>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="container text-center my-5">
+    <h2>Skills</h2>
+    <div class="row">
+      <!-- Images arrangées dans un grid -->
+      <div class="col-3 p-2"><img src="../asset/HTML5_logo_and_wordmark.svg.png" class="img-fluid" /></div>
+      <div class="col-3 p-2"><img src="../asset/CSS3_logo_and_wordmark.svg.png" class="img-fluid" /></div>
+      <div class="col-3 p-2"><img src="../asset/téléchargement.png" class="img-fluid" /></div>
+      <div class="col-3 p-2"><img src="../asset/PHP-logo.svg.png" class="img-fluid" /></div>
+      <div class="col-3 p-2"><img src="../asset/Angular_full_color_logo.svg.png" class="img-fluid" /></div>
+      <div class="col-3 p-2"><img src="../asset/2560px-Node.js_logo.svg.png" class="img-fluid" /></div>
+      <div class="col-3 p-2"><img src="../asset/1200px-MySQL.svg.png" class="img-fluid" /></div>
+      <div class="col-3 p-2"><img src="../asset/React-icon.svg.png" class="img-fluid" /></div>
+    </div>
+  </div>
+
+  <!-- Future Section -->
+  <div class="container text-center my-5">
+    <h1>Mon avenir</h1>
+    <div class="petittrait"></div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero porro tenetur, numquam in voluptas mollitia fugiat
+      eum assumenda delectus quibusdam laborum, placeat voluptatibus sit eligendi at ex, modi aut autem.
+    </p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

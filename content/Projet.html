@@ -1,68 +1,96 @@
 <!DOCTYPE html>
 <html lang="fr">
+
+<head>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../template/Projet.css" />
+
   <head>
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../template/Projet.css" />
-    <title>Projets - Hassan Boucherit</title>
-    <style>
-      .project-item {
-        transition: opacity 0.5s, transform 0.5s;
-        opacity: 0;
-        transform: scale(0.95);
-        display: none;
-      }
-
-      .project-item.show {
-        opacity: 1;
-        transform: scale(1);
-        display: block;
-      }
-
-      .project-item.hide {
-        opacity: 0;
-        transform: scale(0.95);
-        display: none;
-      }
-    </style>
+    <!-- ... Autres liens et scripts ... -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   </head>
 
+  <title>Projets - Hassan Boucherit</title>
+  <style>
+    .navbar {
+      background: #fff;
+      box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+    }
+  
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+  
+    .navbar-brand img {
+      border-radius: 50%;
+      margin-right: 2rem;
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+    }
+  
+    .navbar-brand,
+    .nav-link {
+      color: black;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+  
+    .nav-link {
+      padding: 2rem 1rem;
+      transition: color 0.3s;
+    }
+  
+    .nav-link:hover {
+      color: #999597;
+    }
+  
+    .specialty-title {
+      color: #004080;
+      /* Couleur des titres des sections */
+    }
+  
+    .container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  </head>
+  
   <body>
-    <nav>
-      <div class="sousnav">
-        <div class="partiegauche">
-          <img src="../asset/portrait_progedoc-4.jpg" alt=" " />
-          <a href="">Hassan Boucherit</a>
-        </div>
-        <div>
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Accueil </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./BTS-SIO.html" class="header__link">BTS SIO</a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./Documentation.html" class="header__link"
-                >Documentation</a
-              >
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./Entreprise.html" class="header__link">Entreprise </a>
-            </li>
-            <li>
-              <a href="./Projet.html" class="header__link">Ecole </a>
-            </li>
-          </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="../asset/portrait_progedoc-4.jpg" alt="Hassan Boucherit">
+          Hassan Boucherit
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active header__link" aria-current="page" href="./index.html">Accueil</a>
+            <a class="nav-link header__link" href="./BTS-SIO.html">BTS SIO</a>
+            <a class="nav-link header__link" href="./Documentation.html">Documentation</a>
+            <a class="nav-link header__link" href="./Entreprise.html">Entreprise</a>
+            <a class="nav-link header__link" href="./Projet.html">Ecole</a>
+          </div>
         </div>
       </div>
     </nav>
-    <div style="height: 100px"></div>
+  
+  <div style="height: 100px"></div>
 
-    <!-- Section Projets -->
+  <!-- Section Projets -->
+  <div style="height:100vh; position: relative;">
+
+
     <div class="container my-5">
       <h1 class="text-center mb-4">Mes Projets</h1>
 
@@ -71,16 +99,10 @@
         <button class="btn btn-outline-primary m-2 btn-filter" data-filter="*">
           Tous
         </button>
-        <button
-          class="btn btn-outline-secondary m-2 btn-filter"
-          data-filter="scolaire"
-        >
+        <button class="btn btn-outline-secondary m-2 btn-filter" data-filter="scolaire">
           Projets Scolaires
         </button>
-        <button
-          class="btn btn-outline-secondary m-2 btn-filter"
-          data-filter="professionnel"
-        >
+        <button class="btn btn-outline-secondary m-2 btn-filter" data-filter="professionnel">
           Projets Professionnels
         </button>
       </div>
@@ -90,58 +112,120 @@
         <!-- Exemple de projet scolaire -->
         <div class="col-md-4 project-item" data-category="scolaire">
           <div class="card">
-            <img
-              class="card-img-top"
-              src="chemin_vers_image_projet_scolaire.jpg"
-              alt="Image du projet scolaire"
-            />
+            <img class="card-img-top" src="chemin_vers_image_projet_scolaire.jpg" alt="Image du projet scolaire" />
             <div class="card-body">
               <h5 class="card-title">Projet Scolaire 1</h5>
               <p class="card-text">
                 Description du projet scolaire 1. Quelques détails sur le
                 projet...
               </p>
-              <a href="lien_vers_projet_scolaire" class="btn btn-primary"
-                >Voir le projet</a
-              >
+              <a href="lien_vers_projet_scolaire" class="btn btn-primary">Voir le projet</a>
             </div>
           </div>
         </div>
         <!-- Exemple de projet professionnel -->
         <div class="col-md-4 project-item" data-category="professionnel">
           <div class="card">
-            <img
-              class="card-img-top"
-              src="chemin_vers_image_projet_professionnel.jpg"
-              alt="Image du projet professionnel"
-            />
+            <img class="card-img-top" src="chemin_vers_image_projet_professionnel.jpg"
+              alt="Image du projet professionnel" />
             <div class="card-body">
               <h5 class="card-title">Projet Professionnel 1</h5>
               <p class="card-text">
                 Description du projet professionnel 1. Informations sur le
                 projet...
               </p>
-              <a href="lien_vers_projet_professionnel" class="btn btn-primary"
-                >Voir le projet</a
-              >
+              <a href="lien_vers_projet_professionnel" class="btn btn-primary">Voir le projet</a>
             </div>
           </div>
         </div>
+        <div class="col-md-4 project-item" data-category="professionnel">
+          <div class="card">
+            <img class="card-img-top" src="chemin_vers_image_projet_professionnel.jpg"
+              alt="Image du projet professionnel" />
+            <div class="card-body">
+              <h5 class="card-title">Projet Professionnel 1</h5>
+              <p class="card-text">
+                Description du projet professionnel 1. Informations sur le
+                projet...
+              </p>
+              <a href="lien_vers_projet_professionnel" class="btn btn-primary">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="professionnel">
+          <div class="card">
+            <img class="card-img-top" src="chemin_vers_image_projet_professionnel.jpg"
+              alt="Image du projet professionnel" />
+            <div class="card-body">
+              <h5 class="card-title">Projet Professionnel 1</h5>
+              <p class="card-text">
+                Description du projet professionnel 1. Informations sur le
+                projet...
+              </p>
+              <a href="lien_vers_projet_professionnel" class="btn btn-primary">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+
+
+        <svg style="position: absolute;left:0px; bottom: 0px ;z-index:-1;" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320">
+          <path fill="#E7E7E7" fill-opacity="1"
+            d="M0,288L48,272C96,256,192,224,288,176C384,128,480,64,576,64C672,64,768,128,864,160C960,192,1056,192,1152,176C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+          </path>
+        </svg>
         <!-- Ajouter d'autres projets ici -->
       </div>
     </div>
 
-    <svg
-      style="position: absolute; bottom: 0px"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 320"
-    >
-      <path
-        fill="#E7E7E7"
-        fill-opacity="1"
-        d="M0,288L48,272C96,256,192,224,288,176C384,128,480,64,576,64C672,64,768,128,864,160C960,192,1056,192,1152,176C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-      ></path>
-    </svg>
+  </div>
+
+
+  <div style="background-color:#E7E7E7;">
+
+
+    <div class="container " style="background-color:#E7E7E7;">
+      <h2 class="text-center mb-4">Outils d'Auto-Apprentissage</h2>
+      <div class="row">
+        <!-- LinkedIn Learning -->
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="fas fa-chalkboard-teacher fa-3x mb-3"></i>
+              <h5 class="card-title">LinkedIn Learning</h5>
+              <p class="card-text">Apprentissage de compétences professionnelles et techniques.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dyma.fr -->
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="fas fa-laptop-code fa-3x mb-3"></i>
+              <h5 class="card-title">Dyma.fr</h5>
+              <p class="card-text">Cours interactifs pour le développement web et mobile.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- OpenClassroom -->
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+              <h5 class="card-title">OpenClassroom</h5>
+              <p class="card-text">Formations en ligne pour divers domaines technologiques.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 
     <!-- JavaScript pour filtrer et animer les projets -->
     <script>
@@ -175,5 +259,6 @@
         });
       });
     </script>
-  </body>
+</body>
+
 </html>

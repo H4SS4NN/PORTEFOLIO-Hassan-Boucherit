@@ -1,128 +1,126 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>L'écran des Projets</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="../template/entreprise.css" />
-    <script
-      src="https://kit.fontawesome.com/yourkitcode.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Remplace 'yourkitcode' avec ton vrai kit code de Font Awesome -->
-    <style>
-   
-    </style>
-  </head>
-  <body>
-    <nav>
-      <div class="sousnav">
-        <div class="partiegauche">
-          <img src="../asset/portrait_progedoc-4.jpg" alt=" " />
-          <a href="">Hassan Boucherit</a>
-        </div>
-        <div>
-          <ul class="header__links">
-            <li class="header__link-wrapper">
-              <a href="./index.html" class="header__link"> Accueil </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./BTS-SIO.html" class="header__link">BTS SIO</a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./Documentation.html" class="header__link"
-                >Documentation</a
-              >
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./Entreprise.html" class="header__link">Entreprise </a>
-            </li>
-            <li>
-              <a href="./Projet.html" class="header__link">Ecole </a>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProgeDoc - Solutions de Gestion Documentaire</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../template/entreprise.css" />
+  <script src="https://kit.fontawesome.com/yourkitcode.js" crossorigin="anonymous"></script>
+  <style>
+    .navbar {
+      background: #fff;
+      box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-brand img {
+      border-radius: 50%;
+      margin-right: 2rem;
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: black;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+
+    .nav-link {
+      padding: 2rem 1rem;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #999597;
+    }
+
+    .specialty-title {
+      color: #004080;
+      /* Couleur des titres des sections */
+    }
+
+    .container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../asset/portrait_progedoc-4.jpg" alt="Hassan Boucherit">
+        Hassan Boucherit
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active header__link" aria-current="page" href="./index.html">Accueil</a>
+          <a class="nav-link header__link" href="./BTS-SIO.html">BTS SIO</a>
+          <a class="nav-link header__link" href="./Documentation.html">Documentation</a>
+          <a class="nav-link header__link" href="./Entreprise.html">Entreprise</a>
+          <a class="nav-link header__link" href="./Projet.html">Ecole</a>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <body>
-        <!-- Votre barre de navigation existante ici -->
-        
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            <title>ProgeDoc - Solutions de Gestion Documentaire</title>
-            <link rel="stylesheet" href="../template/BTSSIO.CSS" />
-        </head>
-        <body>
-            <!-- Votre barre de navigation existante ici -->
-        
-            <div style="height: 25vh"></div>
-        
-            <!-- Introduction à ProgeDoc -->
-            <div class="container w-75 my-5">
-                <img src="../asset/progedoc.png" alt="">
-               
-                <div class="introduction">
-                    <p class="text-center">
-                        ProgeDoc est spécialisée dans la gestion documentaire et la numérisation, offrant des solutions efficaces pour la digitalisation et la sécurité des documents d'entreprise.
-                    </p>
-                </div>
-            </div>
-        
-            <!-- Détails sur Oxy GED -->
-            <div   style="background-color: #273036; position: relative;margin-top: 300px;" class="row specialties">
+  <!-- Introduction à ProgeDoc -->
+  <div style="margin-top: 10rem!important;" class="container mt-5 text-center">
+    <img src="../asset/progedoc.png" alt="ProgeDoc Logo" class="mb-3 img-fluid">
+    <p>
+      ProgeDoc est spécialisée dans la gestion documentaire et la numérisation, offrant des solutions efficaces pour la
+      digitalisation et la sécurité des documents d'entreprise.
+    </p>
+  </div>
 
-                <svg
-        style="position: absolute; z-index: -1; margin-top: -300px"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-      >
-        <path
-          fill="#273036"
-          fill-opacity="1"
-          d="M0,160L34.3,138.7C68.6,117,137,75,206,58.7C274.3,43,343,53,411,74.7C480,96,549,128,617,138.7C685.7,149,754,139,823,117.3C891.4,96,960,64,1029,48C1097.1,32,1166,32,1234,26.7C1302.9,21,1371,11,1406,5.3L1440,0L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
-        ></path>
-      </svg>
-            <div style="background-color: #273036; " >
-                
-       
-                <div class="col-md-6 specialty-item">
-                    <h3 class="specialty-title">Oxy GED - Gestion Électronique des Documents</h3>
-                    <p>
-                        Oxy GED est notre solution phare pour la gestion électronique des documents, permettant une organisation optimale, une recherche facile et une sécurité accrue des données.
-                    </p>
-                </div>
-        
-                <!-- Section sur la Numérisation -->
-                <div class="col-md-6 specialty-item">
-                    <h3 class="specialty-title">Services de Numérisation</h3>
-                    <p>
-                        Nous offrons des services de numérisation de haute qualité, transformant vos documents papier en formats numériques sécurisés et facilement accessibles.
-                    </p>
-                </div>
-            </div>
-        
-            <!-- Projet Site Web et Application A110.club -->
-            <div class="project-section">
-                <h2 class="text-center">Projet A110.club - Site Web et Application de Location</h2>
-                <p>
-                    Découvrez notre projet A110.club, un site web et une application dédiés à la location, offrant une interface utilisateur intuitive et une expérience de navigation fluide.
-                </p>
-            </div>
-        </div>
-            <!-- Autres sections ou pied de page ici -->
-        </body>
-        </html>
-        
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-  
-  </body>
+  <!-- Détails sur les Solutions ProgeDoc -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-4">
+        <h3 class="specialty-title">Gestion Documentaire avec ProgeDoc</h3>
+        <p>
+          ProgeDoc offre des solutions avancées pour la gestion documentaire. Les services incluent l'archivage
+          numérique, la gestion de flux documentaires et l'optimisation de l'accès aux informations. Adaptées à tous
+          types d'entreprises, ces solutions permettent une organisation et une recherche efficaces des documents.
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <h3 class="specialty-title">Collaboration et Partage de Documents</h3>
+        <p>
+          ProgeDoc facilite la collaboration et le partage de documents au sein des équipes. Avec des outils intuitifs
+          pour le partage de fichiers et la communication, ProgeDoc assure une collaboration sécurisée et efficace,
+          favorisant le travail d'équipe et l'amélioration de la productivité.
+        </p>
+      </div>
+      <div class="col-lg-4">
+        <h3 class="specialty-title">Sécurité et Conformité chez ProgeDoc</h3>
+        <p>
+          La sécurité et la conformité sont au cœur des solutions ProgeDoc. Les systèmes de gestion documentaire sont
+          conçus pour garantir la sécurité des données, tout en respectant les normes de conformité. ProgeDoc s'engage à
+          protéger les informations sensibles et à assurer la confidentialité des documents.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
