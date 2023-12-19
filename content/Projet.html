@@ -11,57 +11,65 @@
   <!-- ... Autres liens et scripts ... -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+  <!DOCTYPE html>
+  <html lang="fr">
 
-  <title>Projets - Hassan Boucherit</title>
-  <style>
-    .navbar {
-      background: #fff;
-      box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProgeDoc - Solutions de Gestion Documentaire</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../template/entreprise.css" />
+    <script src="https://kit.fontawesome.com/yourkitcode.js" crossorigin="anonymous"></script>
+    <style>
+      .navbar {
+        background: #fff;
+        box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+      }
 
-    .navbar-brand {
-      display: flex;
-      align-items: center;
-    }
+      .navbar-brand {
+        display: flex;
+        align-items: center;
+      }
 
-    .navbar-brand img {
-      border-radius: 50%;
-      margin-right: 2rem;
-      width: 50px;
-      height: 50px;
-      object-fit: cover;
-    }
+      .navbar-brand img {
+        border-radius: 50%;
+        margin-right: 2rem;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+      }
 
-    .navbar-brand,
-    .nav-link {
-      color: black;
-      font-size: 1rem;
-      text-transform: uppercase;
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-decoration: none;
-    }
+      .navbar-brand,
+      .nav-link {
+        color: black;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-decoration: none;
+      }
 
-    .nav-link {
-      padding: 2rem 1rem;
-      transition: color 0.3s;
-    }
+      .nav-link {
+        padding: 2rem 1rem;
+        transition: color 0.3s;
+      }
 
-    .nav-link:hover {
-      color: #999597;
-    }
+      .nav-link:hover {
+        color: #999597;
+      }
 
-    .specialty-title {
-      color: #004080;
-      /* Couleur des titres des sections */
-    }
+      .specialty-title {
+        color: #004080;
+        /* Couleur des titres des sections */
+      }
 
-    .container img {
-      max-width: 100%;
-      height: auto;
-    }
-  </style>
-</head>
+      .container img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
@@ -86,13 +94,13 @@
     </div>
   </nav>
 
-  <div style="height: 100px"></div>
+  <div style="height: 150px"></div>
 
   <!-- Section Projets -->
-  <div style="height:100vh; position: relative;">
+  <div style="height:; position: relative;">
 
 
-    <div class="container my-5">
+    <div class="container">
       <h1 class="text-center mb-4">Mes Projets</h1>
 
       <!-- Boutons de Filtrage -->
@@ -115,27 +123,38 @@
           <div class="card">
             <img class="card-img-top" src="chemin_vers_image_projet_scolaire.jpg" alt="Image du projet scolaire" />
             <div class="card-body">
-              <h5 class="card-title">Projet Scolaire 1</h5>
+              <h5 class="card-title">Oblivion</h5>
               <p class="card-text">
-                Description du projet scolaire 1. Quelques détails sur le
-                projet...
+                Réalisation du site fictif de l'entreprise Oblivion
               </p>
               <a href="lien_vers_projet_scolaire" class="btn btn-primary">Voir le projet</a>
             </div>
           </div>
         </div>
+
         <!-- Exemple de projet professionnel -->
         <div class="col-md-4 project-item" data-category="professionnel">
           <div class="card">
-            <img class="card-img-top" src="chemin_vers_image_projet_professionnel.jpg"
+            <img class="card-img-top" src="https://a110.club/assets/logophoenix78.svg"
               alt="Image du projet professionnel" />
             <div class="card-body">
-              <h5 class="card-title">Projet Professionnel 1</h5>
+              <h5 class="card-title">A110</h5>
               <p class="card-text">
-                Description du projet professionnel 1. Informations sur le
-                projet...
+                Site de location de voiture de luxe en ligne avec paiement en ligne. Alpine A110
               </p>
-              <a href="lien_vers_projet_professionnel" class="btn btn-primary">Voir le projet</a>
+              <a href="https://a110.club/index.php" target="_blank" class="btn btn-primary">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="scolaire">
+          <div class="card">
+            <img class="card-img-top" src="chemin_vers_image_projet_scolaire.jpg" alt="Image du projet scolaire" />
+            <div class="card-body">
+              <h5 class="card-title">Oblivion</h5>
+              <p class="card-text">
+                Réalisation du site fictif de l'entreprise Oblivion
+              </p>
+              <a href="lien_vers_projet_scolaire" class="btn btn-primary">Voir le projet</a>
             </div>
           </div>
         </div>
@@ -144,12 +163,23 @@
             <img class="card-img-top" src="chemin_vers_image_projet_professionnel.jpg"
               alt="Image du projet professionnel" />
             <div class="card-body">
-              <h5 class="card-title">Projet Professionnel 1</h5>
+              <h5 class="card-title">Site PROGEDOC</h5>
               <p class="card-text">
-                Description du projet professionnel 1. Informations sur le
-                projet...
+                Site de présentation de l'entreprise PROGEDOC
               </p>
               <a href="lien_vers_projet_professionnel" class="btn btn-primary">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="scolaire">
+          <div class="card">
+            <img class="card-img-top" src="chemin_vers_image_projet_scolaire.jpg" alt="Image du projet scolaire" />
+            <div class="card-body">
+              <h5 class="card-title">Meteo</h5>
+              <p class="card-text">
+                Réalisation d'un site de météo
+              </p>
+              <a href="lien_vers_projet_scolaire" class="btn btn-primary">Voir le projet</a>
             </div>
           </div>
         </div>
@@ -158,15 +188,52 @@
             <img class="card-img-top" src="chemin_vers_image_projet_professionnel.jpg"
               alt="Image du projet professionnel" />
             <div class="card-body">
-              <h5 class="card-title">Projet Professionnel 1</h5>
+              <h5 class="card-title">Amazon Prime</h5>
               <p class="card-text">
-                Description du projet professionnel 1. Informations sur le
-                projet...
+                Site de streaming de films et séries .
               </p>
               <a href="lien_vers_projet_professionnel" class="btn btn-primary">Voir le projet</a>
             </div>
           </div>
         </div>
+        <div class="col-md-4 project-item" data-category="scolaire">
+          <div class="card">
+            <img class="card-img-top" src="chemin_vers_image_projet_scolaire.jpg" alt="Image du projet scolaire" />
+            <div class="card-body">
+              <h5 class="card-title">Pokemon API</h5>
+              <p class="card-text">
+                Réalisation d'un site de pokemon, avec une API
+              </p>
+              <a href="lien_vers_projet_scolaire" class="btn btn-primary">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="professionnel">
+          <div class="card">
+            <img class="card-img-top" src="chemin_vers_image_projet_professionnel.jpg"
+              alt="Image du projet professionnel" />
+            <div class="card-body">
+              <h5 class="card-title">My Netflix</h5>
+              <p class="card-text">
+                Site de streaming de films et séries .
+              </p>
+              <a href="lien_vers_projet_professionnel" class="btn btn-primary">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="scolaire">
+          <div class="card">
+            <img class="card-img-top" src="chemin_vers_image_projet_scolaire.jpg" alt="Image du projet scolaire" />
+            <div class="card-body">
+              <h5 class="card-title">H</h5>
+              <p class="card-text">
+                Réalisation du site fictif de l'entreprise Oblivion
+              </p>
+              <a href="lien_vers_projet_scolaire" class="btn btn-primary">Voir le projet</a>
+            </div>
+          </div>
+        </div>
+
 
 
         <svg style="position: absolute;left:0px; bottom: 0px ;z-index:-1;" xmlns="http://www.w3.org/2000/svg"
@@ -222,7 +289,7 @@
         </div>
       </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

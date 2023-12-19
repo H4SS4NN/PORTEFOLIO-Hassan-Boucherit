@@ -7,7 +7,10 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-
+ 
+body {
+  background-color: #E7E7E7 !important; 
+}
 
 
 nav {
@@ -105,4 +108,13 @@ nav {
   opacity: 0;
   transform: scale(0.95);
   display: none;
+}
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour les cartes */
+  margin-top: 15px;
+}
+.card-img-top {
+  width: 100%;
+  height: 10vw !important;
+  
 }
