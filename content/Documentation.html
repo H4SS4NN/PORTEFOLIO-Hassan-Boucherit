@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>ProgeDoc - Solutions de Gestion Documentaire</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="../template/doc.css" />
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/yourkitcode.js" crossorigin="anonymous"></script>
   <style>
     .navbar {
       background: #fff;
@@ -81,150 +81,189 @@
     </div>
   </nav>
 
-  <div style="height: 200px"></div>
-  <div style="display: flex; justify-content: center">
-    <div class="loader">
-      <div>
-        <ul>
-          <li>
-            <svg fill="currentColor" viewBox="0 0 90 120">
-              <path
-                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
-              </path>
-            </svg>
-          </li>
-          <li>
-            <svg fill="currentColor" viewBox="0 0 90 120">
-              <path
-                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
-              </path>
-            </svg>
-          </li>
-          <li>
-            <svg fill="currentColor" viewBox="0 0 90 120">
-              <path
-                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
-              </path>
-            </svg>
-          </li>
-          <li>
-            <svg fill="currentColor" viewBox="0 0 90 120">
-              <path
-                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
-              </path>
-            </svg>
-          </li>
-          <li>
-            <svg fill="currentColor" viewBox="0 0 90 120">
-              <path
-                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
-              </path>
-            </svg>
-          </li>
-          <li>
-            <svg fill="currentColor" viewBox="0 0 90 120">
-              <path
-                d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z">
-              </path>
-            </svg>
-          </li>
-        </ul>
+  <div style="height: 100px"></div>
+  <!-- Introduction à ProgeDoc -->
+  <div class="container my-5">
+    <h1 class="text-center mb-4">Répertoire de Documentation</h1>
+
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="../asset/cuteshoot.png" alt="">
+            <h5 class="card-title">CUTESHOOT</h5>
+            <p class="card-text">
+              Un système de connexion sécurisé
+              donnant accès à une boîte à idées.
+            </p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#modalCat1">Voir Plus</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalCat1" tabindex="-1" role="dialog" aria-labelledby="modalLabelCat1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabelCat1">Cuteshoot</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <embed src="../asset/Cuteshoot.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="../asset/clip_image002.png" alt="">
+            <h5 class="card-title">AP 2</h5>
+            <p class="card-text">M2L- Association sportive</p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#modalCat2">Voir Plus</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modalCat2" tabindex="-1" role="dialog" aria-labelledby="modalLabelCat1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabelCat1">AP -2</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <embed src="../asset/AP2.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="../asset/1uFdteRegDyPN-ohQ3SSs0Pg5rFluSHlmFE0nUhDP44A.png" alt="">
+            <h5 class="card-title">AP-1</h5>
+            <p class="card-text">Oblivion a la pointe de la securite .</p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#modalCat3">Voir Plus</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalCat3" tabindex="-1" role="dialog" aria-labelledby="modalLabelCat1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabelCat1">AP - 1</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <embed src="../asset/Cyber_Security_Business_Plan_by_Slidesgo (1).pptx.pdf" type="application/pdf"
+                width="100%" height="600px" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="../asset/Feedly-logo.png" alt="">
+            <h5 class="card-title">Feedly</h5>
+            <p class="card-text">Documentation Feedly</p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#modalCat4">Voir Plus</button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="modal fade" id="modalCat4" tabindex="-1" role="dialog" aria-labelledby="modalLabelCat1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabelCat1">Feedly</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <embed src="../asset/Feedly.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="../asset/téléchargement.png" alt="">
+            <h5 class="card-title">GLPI</h5>
+            <p class="card-text">Application pour tickets.</p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#modalCat5">Voir Plus</button>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalCat5" tabindex="-1" role="dialog" aria-labelledby="modalLabelCat1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabelCat1">GLPI</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <embed src="../asset/GLPI_VM.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Catégorie 3</h5>
+            <p class="card-text">Description ou liste de documents pour la Catégorie 3.</p>
+            <a href="#" class="btn btn-primary">Voir Plus</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div style="position: relative">
-    <svg style="position: absolute; z-index: -1; margin-top: -300px" xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 320">
-      <path fill="#273036" fill-opacity="1"
-        d="M0,160L34.3,138.7C68.6,117,137,75,206,58.7C274.3,43,343,53,411,74.7C480,96,549,128,617,138.7C685.7,149,754,139,823,117.3C891.4,96,960,64,1029,48C1097.1,32,1166,32,1234,26.7C1302.9,21,1371,11,1406,5.3L1440,0L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
-      </path>
-    </svg>
 
-    <div style="margin-top: 200px; background-color: #273036; padding: 40px;">
-      <h1 style="color: white;">Documentation</h1>
-      <div class="row" id="projects-list">
-        <!-- Exemple de projet scolaire -->
-        <div class="col-md-3 project-item" data-category="scolaire">
-          <div class="card">
-            <img class="card-img-top" src="../asset/logo-glpi.png" alt="Image du projet scolaire" />
-            <div class="card-body">
-              <h5 class="card-title">GLPI</h5>
-              <a href="lien_vers_projet_scolaire" class="btn btn-primary">Telecharger</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 project-item" data-category="scolaire">
-          <div class="card">
-            <img class="card-img-top" src="../asset/Feedly-logo.png" alt="Image du projet scolaire" />
-            <div class="card-body">
-              <h5 class="card-title">Feedly</h5>
-              <a href="lien_vers_projet_scolaire" class="btn btn-primary">Telecharger</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 project-item" data-category="scolaire">
-          <div class="card">
-            <img class="card-img-top" src="../asset/Feedly-logo.png" alt="Image du projet scolaire" />
-            <div class="card-body">
-              <h5 class="card-title">Feedly</h5>
-              <a href="lien_vers_projet_scolaire" class="btn btn-primary">Telecharger</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 project-item" data-category="scolaire">
-          <div class="card">
-            <img class="card-img-top" src="../asset/Feedly-logo.png" alt="Image du projet scolaire" />
-            <div class="card-body">
-              <h5 class="card-title">Feedly</h5>
-              <a href="lien_vers_projet_scolaire" class="btn btn-primary">Telecharger</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div style=" background-color: #273036; padding: 40px;">
-      <div class="row" id="projects-list">
-        <div class="col-md-3 project-item" data-category="scolaire">
-          <div class="card">
-            <img class="card-img-top" src="../asset/Feedly-logo.png" alt="Image du projet scolaire" />
-            <div class="card-body">
-              <h5 class="card-title">Feedly</h5>
-              <a href="lien_vers_projet_scolaire" class="btn btn-primary">Telecharger</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 project-item" data-category="scolaire">
-          <div class="card">
-            <img class="card-img-top" src="../asset/Feedly-logo.png" alt="Image du projet scolaire" />
-            <div class="card-body">
-              <h5 class="card-title">Feedly</h5>
-              <a href="lien_vers_projet_scolaire" class="btn btn-primary">Telecharger</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 project-item" data-category="scolaire">
-          <div class="card">
-            <img class="card-img-top" src="../asset/Feedly-logo.png" alt="Image du projet scolaire" />
-            <div class="card-body">
-              <h5 class="card-title">Feedly</h5>
-              <a href="lien_vers_projet_scolaire" class="btn btn-primary">Telecharger</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 project-item" data-category="scolaire">
-          <div class="card">
-            <img class="card-img-top" src="../asset/Feedly-logo.png" alt="Image du projet scolaire" />
-            <div class="card-body">
-              <h5 class="card-title">Feedly</h5>
-              <a href="lien_vers_projet_scolaire" class="btn btn-primary">Telecharger</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
-    </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
 
