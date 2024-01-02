@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../template/entreprise.css" />
   <script src="https://kit.fontawesome.com/yourkitcode.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../template/BTSSIO.CSS">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <style>
     .navbar {
@@ -86,8 +87,8 @@
 
   <div style="height: 100px"></div>
 
-  <div class="container my-5">
-    <div class="container my-5">
+  <div   class="container my-5">
+    <div  class="container my-5">
       <h1 class="text-center mb-4">BTS SIO - Services Informatiques aux Organisations</h1>
 
       <!-- Introduction sur le BTS SIO -->
@@ -98,11 +99,12 @@
         bien plus encore. Il prépare efficacement à une insertion rapide dans le monde professionnel ou à une poursuite
         d'études.</p>
 
-      <div class="row">
+      <div  class="row">
         <!-- Section SISR -->
         <div class="col-md-6 mb-5">
-          <div class="card">
+          <div data-aos="fade-down"class="card">
             <div class="card-body">
+              <img src="../asset/90d8b332-9bb5-4f66-a38c-c65b3c814b08.webp"  alt="">
               <h2 class="card-title">Option SISR</h2>
               <p class="card-text">La spécialisation SISR offre une formation approfondie sur la gestion des
                 infrastructures
@@ -120,9 +122,10 @@
         </div>
 
         <!-- Section SLAM -->
-        <div class="col-md-6 mb-5">
+        <div data-aos="fade-right" class="col-md-6 mb-5">
           <div class="card">
             <div class="card-body">
+              <img src="../asset/ba07fdf8-7bae-486f-bc3a-3e0b3bae3ce4.webp"  alt="">
               <h2 class="card-title">Option SLAM</h2>
               <p class="card-text">L'option SLAM met l'accent sur le développement logiciel, l'analyse et la conception
                 d'applications, ainsi que la gestion de bases de données. Les étudiants acquièrent des compétences en
@@ -142,7 +145,7 @@
 
 
       <!-- Section Cybersécurité -->
-      <div class="card mb-5">
+      <div  data-aos="fade-down"class="card mb-5">
         <div class="card-body">
           <h2 class="card-title">Cybersécurité</h2>
           <p class="card-text">La cybersécurité, un pilier essentiel du BTS SIO, traite de la protection des
@@ -162,6 +165,10 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
+<script>
+  AOS.init();
+</script>
